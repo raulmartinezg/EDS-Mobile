@@ -1,0 +1,17 @@
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjIzMSIsIm5iZiI6MTYxNzgzMDIyMiwiZXhwIjoxNjE3ODczNDIyLCJpYXQiOjE2MTc4MzAyMjIsImlzcyI6Ikx1bWFJc3N1ZXIiLCJhdWQiOiJMdW1hQXVkaWVuY2UifQ.5igtRB13N4YlLPaZhmr6SbUqVETTy585qakEFKxIsVM",
+  "expires": "2021-04-08T04:17:02.175221-05:00",
+  "status": 6,
+  "success": true,
+  "data": {
+    "cus": 195,
+    "success": true,
+    "estatus": 6,
+    "nop": 231,
+    "nom": "ZUÑIGA HERNANDEZ LUIS MIGUEL",
+    "pwd": "abc",
+    "message": "Usuario funcional",
+    "exhorto": "Verifica la presión de tus llantas al inicio de Viaje"
+  },
+  "message": "Acceso Autorizado!"
+}

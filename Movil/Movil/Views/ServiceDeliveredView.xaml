@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:pullToRefresh="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms" xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             Title="Entregados"
+             x:Class="Movil.Views.ServiceDeliveredView">
+    <ContentPage.Content>
+        <Grid RowSpacing="0" ColumnSpacing="0" Padding="0" Margin="0">
+            <pullToRefresh:SfPullToRefresh x:Name="pullToRefresh"
+                                           RefreshContentHeight="50"
+                                           PullingThreshold="150"
+                                           RefreshContentWidth="50"
+                                           ProgressBackgroundColor="#428BCA" 
+                                           TransitionMode="SlideOnTop" 
+                                           IsRefreshing="False">
+                <pullToRefresh:SfPullToRefresh.ProgressStrokeWidth>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <OnPlatform.Android>6</OnPlatform.Android>
+                    </OnPlatform>
+                </pullToRefresh:SfPullToRefresh.ProgressStrokeWidth>
+                <pullToRefresh:SfPullToRefresh.PullableContent>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <SearchBar x:Name="filterText" HeightRequest="40"
+                                   BackgroundColor="LightGray"
+                           Placeholder="Buscar..."
+                           TextChanged="filterText_TextChanged" Grid.Row="0"/>
+                        <syncfusion:SfListView x:Name="listView" Grid.Row="1" ItemsSource="{Binding ServicesSource}" AutoFitMode="Height">
+                            <syncfusion:SfListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid RowSpacing="0" ColumnSpacing="0" Margin="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="1" />
+                                        </Grid.RowDefinitions>
+                                        <Grid RowSpacing="0" Padding="10">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Label Text="{Binding SKU, StringFormat='SKU: {0}'}" FontAttributes="Bold" FontSize="18" TextColor="#474747" />
+                                            <Grid Grid.Row="1" Padding="0,15,0,0">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+                                                <StackLayout Orientation="Horizontal" Grid.Column="0">
+                                                    <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                                                        <Label Text="{Binding Descripcion, StringFormat='Descripción: {0}'}" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="16"/>
+                                                    </Grid>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" Padding="15,0,0,0" Grid.Column="1">
+                                                    <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                                                        <Label Text="{Binding Entregado, StringFormat='Entregado: {0}'}" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="16"/>
+                                                    </Grid>
+                                                </StackLayout>
+                                            </Grid>
+                                        </Grid>
+                                        <BoxView Grid.Row="1" HeightRequest="1" Opacity="0.75" BackgroundColor="#DFDEE3" />
+                                    </Grid>
+                                </DataTemplate>
+                            </syncfusion:SfListView.ItemTemplate>
+                        </syncfusion:SfListView>
+                    </Grid>
+                </pullToRefresh:SfPullToRefresh.PullableContent>
+            </pullToRefresh:SfPullToRefresh>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Bienvenida"
+             x:Class="Movil.Views.Bienvenida">
+    
+    <ContentPage.Content>     
+        <Grid x:Name="GridDatosOperador">           
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="160" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="0" Grid.Column="1" Source="edslogo.png" HorizontalOptions="End" WidthRequest="90" VerticalOptions="Start"/>
+            <Label Grid.Row="1" 
+                   Grid.ColumnSpan="2" 
+                   Text="{Binding zOperadorBienvenida}" 
+                   FontAttributes="Bold"
+                   FontSize="14" 
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Start"/>
+            <Frame Grid.Row="2" Grid.ColumnSpan="2" 
+                   CornerRadius="15" 
+                   Margin="50,10,50,10"
+                   Padding="30,0,30,0"
+                   BackgroundColor="AntiqueWhite"  HasShadow="False" BorderColor="Black">
+                <Label Text="{Binding zExhorto}" 
+                       HorizontalTextAlignment="Center"  
+                       TextColor="#3F51B5" 
+                       VerticalOptions="Center"
+                       FontSize="16"/>
+            </Frame>
+            <Button Grid.Row="3" Grid.ColumnSpan="2"
+                        Margin="60,10,60,5" CornerRadius="12"
+                        Text="Mis Viajes" x:Name="ctrlMisViajes" FontSize="13" 
+                        HeightRequest="65" Command="{Binding GoTravels}"
+                        WidthRequest="200"
+                        TextColor="White" BackgroundColor="#163996">
+            </Button>
+        </Grid>      
+    </ContentPage.Content>
+</ContentPage>

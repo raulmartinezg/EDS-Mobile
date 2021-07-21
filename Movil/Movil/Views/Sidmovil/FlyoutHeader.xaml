@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Movil.Views.FlyoutHeader">
+    <ContentView.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid HeightRequest="150" Grid.Row="0">
+                <Image Aspect="AspectFill" 
+                    Source="tractoreds01.jpg"
+                    Opacity="0.7" />
+                <Label Text="EDSMOVIL" 
+                    TextColor="White"
+                    FontAttributes="Bold" 
+                    FontSize="Subtitle"               
+                    HorizontalTextAlignment="End"
+                    VerticalTextAlignment="End" />
+            </Grid>
+            <Grid Grid.Row="1">
+                <Label Margin="0,10,0,0" HorizontalTextAlignment="Center" FontSize="22" Text="{Binding Subtitulo}"></Label>
+            </Grid>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

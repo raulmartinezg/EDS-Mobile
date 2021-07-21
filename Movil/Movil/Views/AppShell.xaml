@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"        
+            xmlns:views="clr-namespace:Movil.Views"
+            x:Class="Movil.Views.AppShell"            
+            FlyoutHeaderBehavior="CollapseOnScroll">
+    <Shell.FlyoutHeader>
+        <views:FlyoutHeader/>
+    </Shell.FlyoutHeader>
+    <!-- Template each FlyoutItem -->
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid HeightRequest="35" Padding="0,0,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.2*" />
+                    <ColumnDefinition Width="0.8*" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" 
+                       Source="{Binding Icon}" 
+                       Margin="5" 
+                       WidthRequest="20" 
+                       HeightRequest="20" />
+                <Label Grid.Column="1"
+                       Text="{Binding Title}"
+                       FontSize="20"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <Shell.MenuItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="0.2*,0.8*" HeightRequest="35" Padding="0,0,0,10">
+                <Image Source="{Binding Icon}"
+                       Margin="5" 
+                       WidthRequest="20" 
+                       HeightRequest="20" />
+                <Label Grid.Column="1"
+                       Text="{Binding Text}"
+                       FontSize="20"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.MenuItemTemplate>
+
+    <ShellContent Title="Login" Route="login" ContentTemplate="{DataTemplate views:Login}" >
+
+    </ShellContent>
+
+    <FlyoutItem IsEnabled="False" Title="Bienvenida">
+        <ShellContent Route="Bienvenida" Title="Bienvenida"
+                          ContentTemplate="{DataTemplate views:Bienvenida}">
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem IsEnabled="False">
+        <ShellContent Route="DetalleServicioView" Title="DetalleServicio"
+                          ContentTemplate="{DataTemplate views:DetalleServicioView}">
+        </ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Detalle del viaje" Icon="truckLoading.png" Route="main">
+        <ShellContent Route="traveldetail" Title="TravelDetail"
+                          ContentTemplate="{DataTemplate views:TravelDetailView}">
+        </ShellContent>
+    </FlyoutItem>
+    <!--Folio de viaje-->
+    <FlyoutItem Title="Pendientes" Icon="calendarTimes.png">
+        <ShellContent Title="Pendientes"
+                          Route="PagePendientes">
+            <views:ParadasView>
+                <x:Arguments>
+                    <x:String>P</x:String>
+                </x:Arguments>
+            </views:ParadasView>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Concluidos" Icon="calendarCheck.png" >
+        <ShellContent Title="Concluidos"
+                          Route="PageConcluidos">
+            <views:ParadasView>
+                <x:Arguments>
+                    <x:String>C</x:String>
+                </x:Arguments>
+            </views:ParadasView>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Incidentes" Icon="carCrash.png" >
+        <ShellContent Title="Incidentes"
+                          Route="PageIncidentes"
+                          ContentTemplate="{DataTemplate views:IncidentesView}">
+        </ShellContent>
+    </FlyoutItem>
+    <!--Servicio-->
+    <FlyoutItem Title="Detalle del servicio" Icon="truckLoading.png" >
+        <ShellContent Title="DetalleDelServicio"
+                          Route="DetalleDelServicio"
+                          ContentTemplate="{DataTemplate views:DetalleServicioView}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Llegada" Icon="checkCircle.png">
+        <ShellContent Title="Llegada"
+                          Route="PageLlegada"
+                          ContentTemplate="{DataTemplate views:LlegadaView}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Entregas" Icon="truckMoving.png" >
+        <ShellContent Title="Entregas"
+                          Route="PageEntregas"
+                          ContentTemplate="{DataTemplate views:DeliveriesView}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Recolecciones" Icon="truckLoading.png" >
+        <ShellContent Title="Recolecciones"
+                          Route="PageRecolecciones"
+                          ContentTemplate="{DataTemplate views:RecoleccionesView}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Salidas" Icon="timesCircle.png">
+        <ShellContent Title="Salidas"
+                          Route="PageSalidas"
+                          ContentTemplate="{DataTemplate views:SalidasView}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Encuesta" Icon="fileAlt.png" >
+        <ShellContent Title="Encuesta"
+                          Route="PageEncuesta"
+                          ContentTemplate="{DataTemplate views:EncuestaView}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Conclusión" Icon="calendarTimes.png" >
+        <ShellContent Title="Conclusión"
+                          Route="PageConclusion"
+                          ContentTemplate="{DataTemplate views:ConclusionView}">
+        </ShellContent>
+    </FlyoutItem>
+    <!--Entregas-->
+    <FlyoutItem Title="Faltante" Icon="calendarTimes.png" >
+        <ShellContent Title="Faltante"
+                          Route="PageFaltante"
+                          ContentTemplate="{DataTemplate views:MissingServiceView}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Entregados" Icon="truckMoving.png" >
+        <ShellContent Title="Entregados"
+                          Route="PageEntregados"
+                          ContentTemplate="{DataTemplate views:ServiceDeliveredView}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Incidente Servicio" Icon="carCrash.png" >
+        <ShellContent Title="Incidente Servicio"
+                          Route="PageIncidenteServicio"
+                          ContentTemplate="{DataTemplate views:ServiceIncidentView}">
+        </ShellContent>
+    </FlyoutItem>
+    <!-- Botones Cerrar -->
+    <MenuItem Text="Cerrar Viaje"
+              x:Name="Cerrar"
+              IconImageSource="logouticon.png"
+              Clicked="MenuItem_Clicked" />
+    <FlyoutItem Title="Cerrar Servicio" Icon="logouticon.png" >
+        <ShellContent Title="Cerrar Servicio"
+                          Route="CerrarServicio"
+                          ContentTemplate="{DataTemplate views:TravelDetailView}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Cerrar Entrega" Icon="logouticon.png" >
+        <ShellContent Title="Cerrar Entrega"
+                          Route="CerrarEntrega"
+                          ContentTemplate="{DataTemplate views:DetalleServicioView}">
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Cerrar Sesión" Icon="logouticon.png" >
+        <ShellContent Title="Cerrar Sesión"
+                          Route="CerrarSesion"
+                          ContentTemplate="{DataTemplate views:Login}">
+        </ShellContent>
+    </FlyoutItem>
+</Shell>

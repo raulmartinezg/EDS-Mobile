@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Incidentes"
+             x:Class="Movil.Views.IncidentesView">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".15*"></RowDefinition>
+                <RowDefinition Height=".35*"></RowDefinition>
+                <RowDefinition Height=".1*"></RowDefinition>
+                <RowDefinition Height=".25*"></RowDefinition>
+                <RowDefinition Height=".15*"></RowDefinition>
+             </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Row="0">
+                <Label Text="Incidencias" FontSize="Large" HorizontalOptions="Start" Margin="20,20,0,0"/>
+                <Label Text="Adjunta una foto y descripcion del incidente" FontSize="Micro" HorizontalOptions="Start" Margin="20,5,0,0"/>
+            </StackLayout>
+            <Frame Grid.Row="1" BorderColor="#F0FFFD" Margin="20" CornerRadius="20" BackgroundColor="#F0FFFD">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height=".65*"></RowDefinition>
+                        <RowDefinition Height=".35*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton IsEnabled="{Binding CamaraEnabled}" Source="camara.png" Grid.Row="0" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" WidthRequest="50" HeightRequest="50" Command="{Binding CameraCommand}"/>
+                    <Label Text="Cámara" FontSize="Small" Grid.Row="1" Grid.Column="0" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" />
+                    <ImageButton IsEnabled="{Binding GaleriaEnabled}" Source="galeria.png" Grid.Row="0" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand" BackgroundColor="Transparent" WidthRequest="50" HeightRequest="50" Command="{Binding GalleryCommand}"/>
+                    <Label Text="Galeria" FontSize="Small" Grid.Row="1" Grid.Column="1" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+            </Frame>
+            <Image Grid.Row="2" Source="{Binding ImageSource}"></Image>
+            <StackLayout Grid.Row="3" Margin="20,20,20,30">
+                <Label Text="Descripción:" FontSize="Small" HorizontalOptions="Start"/>
+                <Entry WidthRequest="200" Placeholder="Incidente..." FontSize="Small" Text="{Binding Descripcion}"/>
+            </StackLayout>
+            <StackLayout Grid.Row="4">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Button BackgroundColor="#2BA3EF" Text="Enviar" CornerRadius="10" Grid.Column="1" TextColor="white" Command="{Binding SendCommand}"/>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

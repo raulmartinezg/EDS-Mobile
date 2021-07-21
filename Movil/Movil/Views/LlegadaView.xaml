@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fontawesome="clr-namespace:Utils.FontAwesome"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms" xmlns:signature="clr-namespace:Syncfusion.XForms.SignaturePad;assembly=Syncfusion.SfSignaturePad.XForms"
+             Title="Llegada"
+             x:Class="Movil.Views.LlegadaView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".2*"></RowDefinition>
+                    <RowDefinition Height=".2*"></RowDefinition>
+                    <RowDefinition Height=".35*"></RowDefinition>
+                    <RowDefinition Height=".25*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <inputLayout:SfTextInputLayout 
+                        Grid.Row="0"
+                        Margin="70,15,70,5"
+                        x:Name="numEmpleado"
+                        Hint="Número Empleado"  
+                        CharMaxLength="10"
+                        ContainerType="Outlined"
+                        OutlineCornerRadius="8"
+                        ContainerBackgroundColor="White"
+                        FocusedColor="Blue"
+                        HeightRequest="58">
+                    <Entry x:Name="ctrlEmpleado" Text="{Binding Numero}"
+                           FontSize="14" MaxLength="10" HorizontalTextAlignment="Center"/>
+                    <inputLayout:SfTextInputLayout.HintLabelStyle>
+                        <inputLayout:LabelStyle FontSize="14" />
+                    </inputLayout:SfTextInputLayout.HintLabelStyle>
+                </inputLayout:SfTextInputLayout >
+                <inputLayout:SfTextInputLayout 
+                        Grid.Row="1"
+                        Margin="70,5,70,20"
+                        x:Name="nombreEmpleado"
+                        Hint="Nombre Empleado"  
+                        CharMaxLength="100"
+                        ContainerType="Outlined"
+                        OutlineCornerRadius="8"
+                        ContainerBackgroundColor="White"
+                        FocusedColor="Blue"
+                        HeightRequest="58">
+                    <Entry x:Name="ctrlNombreEmpleado" Text="{Binding Nombre}"
+                           FontSize="14" MaxLength="100" HorizontalTextAlignment="Center"/>
+                    <inputLayout:SfTextInputLayout.HintLabelStyle>
+                        <inputLayout:LabelStyle FontSize="14" />
+                    </inputLayout:SfTextInputLayout.HintLabelStyle>
+                </inputLayout:SfTextInputLayout >
+                <cards:SfCardView Grid.Row="2" BorderColor="Black" BorderWidth="1" CornerRadius="10,10,10,10" Margin="20,0,20,0">
+                    <signature:SfSignaturePad  x:Name="Firma">
+                    </signature:SfSignaturePad>
+                </cards:SfCardView>
+                <Button Grid.Row="3"
+                        Margin="70,10,70,30" CornerRadius="10" Command="{Binding ButtonCommand}"
+                        Text="Registrar" x:Name="ctrlRegistrar" FontSize="14" 
+                        BackgroundColor="#163996" TextColor="White">
+                </Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

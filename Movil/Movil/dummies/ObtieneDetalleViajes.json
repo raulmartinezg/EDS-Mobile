@@ -1,0 +1,801 @@
+{
+  "success": true,
+  "data": {
+    "newDataSet": [
+      {
+        "cfv": 81381,
+        "ces": 2,
+        "cop": 195,
+        "cun": 402,
+        "car": 409,
+        "com": 0,
+        "fpe": null,
+        "fpr": null,
+        "fsp": "2021-04-05T01:54:00",
+        "fsi": null,
+        "fvi": "G0080273",
+        "noe": 12,
+        "par": 10,
+        "pro": 0,
+        "rut": "Tepic - Ensenada",
+        "sin": 0,
+        "uni": "7083"
+      }
+    ],
+    "newDataSet1": [
+      {
+        "coe": 645679,
+        "cco": 161,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122541",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 49.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645680,
+        "cco": 30,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122866",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 23.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645681,
+        "cco": 466,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122877",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 16.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645685,
+        "cco": 161,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122883",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 118.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645687,
+        "cco": 94,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122892",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 1.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645686,
+        "cco": 94,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122888",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 2.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645456,
+        "cco": 351,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122924",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 13.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645691,
+        "cco": 346,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122964",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 7.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645692,
+        "cco": 153,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122973",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 1.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645688,
+        "cco": 347,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122911",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 153.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645689,
+        "cco": 3,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122922",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 16.0,
+        "tpp": 0
+      },
+      {
+        "coe": 645690,
+        "cco": 93,
+        "ces": 1,
+        "cfv": 81381,
+        "ctd": 2,
+        "fpr": null,
+        "fsi": null,
+        "oe": "122936",
+        "pro": false,
+        "sin": false,
+        "tev": 0,
+        "tpr": 10.0,
+        "tpp": 0
+      }
+    ],
+    "newDataSet2": [
+      {
+        "cod": 6748838,
+        "csk": 1,
+        "coe": 645679,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 49,
+        "tpp": 0
+      },
+      {
+        "cod": 6748839,
+        "csk": 1,
+        "coe": 645680,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 23,
+        "tpp": 0
+      },
+      {
+        "cod": 6748840,
+        "csk": 1,
+        "coe": 645681,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 16,
+        "tpp": 0
+      },
+      {
+        "cod": 6748855,
+        "csk": 1,
+        "coe": 645685,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 118,
+        "tpp": 0
+      },
+      {
+        "cod": 6748856,
+        "csk": 1,
+        "coe": 645686,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 2,
+        "tpp": 0
+      },
+      {
+        "cod": 6748857,
+        "csk": 1,
+        "coe": 645687,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6748858,
+        "csk": 1,
+        "coe": 645688,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 153,
+        "tpp": 0
+      },
+      {
+        "cod": 6748859,
+        "csk": 1,
+        "coe": 645689,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 16,
+        "tpp": 0
+      },
+      {
+        "cod": 6746382,
+        "csk": 344903,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": "122924000001",
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746383,
+        "csk": 344903,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": "122924000002",
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746384,
+        "csk": 2396,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746385,
+        "csk": 122212,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746386,
+        "csk": 132781,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746387,
+        "csk": 184207,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746388,
+        "csk": 378486,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746389,
+        "csk": 380354,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746390,
+        "csk": 385194,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746391,
+        "csk": 387365,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746392,
+        "csk": 389415,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746393,
+        "csk": 389870,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6746394,
+        "csk": 390452,
+        "coe": 645456,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      },
+      {
+        "cod": 6748860,
+        "csk": 1,
+        "coe": 645690,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 10,
+        "tpp": 0
+      },
+      {
+        "cod": 6748861,
+        "csk": 1,
+        "coe": 645691,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 7,
+        "tpp": 0
+      },
+      {
+        "cod": 6748862,
+        "csk": 1,
+        "coe": 645692,
+        "ces": 1,
+        "ebi": 1,
+        "ser": null,
+        "tpr": 1,
+        "tpp": 0
+      }
+    ],
+    "newDataSet3": [
+      {
+        "csk": 1,
+        "des": "Autopartes",
+        "unm": 2,
+        "sku": "AUTOPARTES"
+      },
+      {
+        "csk": 2396,
+        "des": "JUEGO DE LODERA",
+        "unm": 3,
+        "sku": "999J2XR00004"
+      },
+      {
+        "csk": 122212,
+        "des": "MANGOSUSPDEL",
+        "unm": 3,
+        "sku": "400144KH0A"
+      },
+      {
+        "csk": 132781,
+        "des": "HORQDELSUSPS",
+        "unm": 3,
+        "sku": "545244KH0A"
+      },
+      {
+        "csk": 184207,
+        "des": "FILO MOLDURA DE",
+        "unm": 3,
+        "sku": "638614CE1A"
+      },
+      {
+        "csk": 344903,
+        "des": "Caja",
+        "unm": 1,
+        "sku": "11111111111"
+      },
+      {
+        "csk": 378486,
+        "des": "ESLABONDELSUS",
+        "unm": 3,
+        "sku": "545004KH5A"
+      },
+      {
+        "csk": 380354,
+        "des": "AMORTIGUADORDE",
+        "unm": 3,
+        "sku": "E61105JJ0A"
+      },
+      {
+        "csk": 385194,
+        "des": "PUERTADELANTER",
+        "unm": 3,
+        "sku": "HMA019BLMB"
+      },
+      {
+        "csk": 387365,
+        "des": "AMORTIGUADORDE",
+        "unm": 3,
+        "sku": "E43035EF0D"
+      },
+      {
+        "csk": 389415,
+        "des": "AMPLIFICADORVE",
+        "unm": 3,
+        "sku": "926006LB0A"
+      },
+      {
+        "csk": 389870,
+        "des": "CTROLREMPTA",
+        "unm": 3,
+        "sku": "825006LE0A"
+      },
+      {
+        "csk": 390452,
+        "des": "CTROLREMPTA",
+        "unm": 3,
+        "sku": "825016LE0A"
+      }
+    ],
+    "newDataSet4": [
+      {
+        "cco": 3,
+        "nnc": "AGENCIA AUTOMOTRIZ DE LOS MOCHIS,S.A. DE C.V.",
+        "car": 16,
+        "dir": "AV. ALFONSO CANO 0, CENTRO, CP:81200, Los Mochis (SIN)",
+        "fle": "2021-04-06T05:00:00",
+        "fse": "2021-04-06T06:00:00",
+        "lat": 25.798643,
+        "lon": -108.98633,
+        "nco": "347",
+        "ces": 1,
+        "tpr": 1,
+        "tpp": 0,
+        "pro": 0
+      },
+      {
+        "cco": 93,
+        "nnc": "COMERCIAL AUTOMOTRIZ DEL NOROESTE S.A.DE C.V.",
+        "car": 10,
+        "dir": "BLVD. E ZAPATA 0, GUADALUPE, CP:80220, Culiacán (SIN)",
+        "fle": "2021-04-06T00:00:00",
+        "fse": "2021-04-06T01:00:00",
+        "lat": 24.796919,
+        "lon": -107.392239,
+        "nco": "346",
+        "ces": 1,
+        "tpr": 1,
+        "tpp": 0,
+        "pro": 0
+      },
+      {
+        "cco": 351,
+        "nnc": "SUCURSAL GUASAVE, AGENCIA AUTOMOTRIZ DE LOS MOCHIS",
+        "car": 13,
+        "dir": "BLVD. 16 DE SEPTIEMBRE No.308\r\n , CENTRO, CP:81000, Guasave (SIN)",
+        "fle": "2021-04-06T03:54:00",
+        "fse": "2021-04-06T04:54:00",
+        "lat": 25.5704,
+        "lon": -108.464,
+        "nco": "348",
+        "ces": 1,
+        "tpr": 1,
+        "tpp": 0,
+        "pro": 0
+      },
+      {
+        "cco": 153,
+        "nnc": "MOTOR AUTOS DE OBREGON, S.A. DE C.V.",
+        "car": 1,
+        "dir": "JALISCO 0, CENTRO, CP:85000, Ciudad Obregón (SON)",
+        "fle": "2021-04-06T09:00:00",
+        "fse": "2021-04-06T10:00:00",
+        "lat": 27.482077,
+        "lon": -109.928524,
+        "nco": "363",
+        "ces": 1,
+        "tpr": 1,
+        "tpp": 0,
+        "pro": 0
+      },
+      {
+        "cco": 346,
+        "nnc": "SUCURSAL GUAYMAS , NISSAUTO SONORA",
+        "car": 7,
+        "dir": "BLVD. GARCIA LOPEZ S/N , LAS VILLAS, CP:85440, Guaymas (Heroica Guaymas) (SON)",
+        "fle": "2021-04-06T11:00:00",
+        "fse": "2021-04-06T12:00:00",
+        "lat": 27.925161,
+        "lon": -110.916381,
+        "nco": "94",
+        "ces": 1,
+        "tpr": 1,
+        "tpp": 0,
+        "pro": 0
+      },
+      {
+        "cco": 161,
+        "nnc": "NISSAUTO SONORA, S.A. DE C.V.",
+        "car": 167,
+        "dir": "LUIS ENCINAS JHONSON 632, EL TORREON, CP:83204, Hermosillo (SON)",
+        "fle": "2021-04-06T14:36:00",
+        "fse": "2021-04-06T15:36:00",
+        "lat": 29.093219,
+        "lon": -110.988745,
+        "nco": "86",
+        "ces": 1,
+        "tpr": 2,
+        "tpp": 0,
+        "pro": 0
+      },
+      {
+        "cco": 347,
+        "nnc": "SUCURSAL GRAN AUTO, NISSAUTO SONORA",
+        "car": 153,
+        "dir": "BLVD. A. L. RODRIGUEZZ 110 , CENTRO, CP:83000, Hermosillo (SON)",
+        "fle": "2021-04-06T13:36:00",
+        "fse": "2021-04-06T14:36:00",
+        "lat": 29.090456,
+        "lon": -110.956474,
+        "nco": "91",
+        "ces": 1,
+        "tpr": 1,
+        "tpp": 0,
+        "pro": 0
+      },
+      {
+        "cco": 466,
+        "nnc": "NISSAUTO SONORA S.A DE C.V",
+        "car": 16,
+        "dir": "AV OBREGON NO. 2730 , EL GRECO, CP:84090, Nogales (SON)",
+        "fle": "2021-04-06T17:00:00",
+        "fse": "2021-04-06T18:00:00",
+        "lat": 31.287677,
+        "lon": -110.937025,
+        "nco": "10",
+        "ces": 1,
+        "tpr": 1,
+        "tpp": 0,
+        "pro": 0
+      },
+      {
+        "cco": 30,
+        "nnc": "AUTOMOTORES FRONTERA, S.A. DE C.V.",
+        "car": 23,
+        "dir": "BLVD. LOPEZ MATEOS 799, INDUSTRIAL, CP:21010, Mexicali (BCN)",
+        "fle": "2021-04-07T03:24:00",
+        "fse": "2021-04-07T04:24:00",
+        "lat": 32.649774,
+        "lon": -115.47149,
+        "nco": "17",
+        "ces": 1,
+        "tpr": 1,
+        "tpp": 0,
+        "pro": 0
+      },
+      {
+        "cco": 94,
+        "nnc": "COMERCIO AUTOMOTRIZ, S.A. DE C.V.",
+        "car": 3,
+        "dir": "XAVIER VILLAURRUTIA 9950, ZONA RIO, CP:22320, Tijuana (BCN)",
+        "fle": "2021-04-07T06:18:00",
+        "fse": "2021-04-07T07:18:00",
+        "lat": 32.53243,
+        "lon": -117.02111,
+        "nco": "18",
+        "ces": 1,
+        "tpr": 2,
+        "tpp": 0,
+        "pro": 0
+      }
+    ],
+    "newDataSet5": [
+      {
+        "cve": 1,
+        "ver": 1,
+        "ca": "SI      NO",
+        "n": 1,
+        "d": "Se cumple con el horario de entrega",
+        "t": "OM",
+        "o": 2
+      },
+      {
+        "cve": 1,
+        "ver": 1,
+        "ca": "SI      NO",
+        "n": 2,
+        "d": "La unidad cuenta con equipo  logístico  (barras de sujecion y cinturones).",
+        "t": "OM",
+        "o": 2
+      },
+      {
+        "cve": 1,
+        "ver": 1,
+        "ca": "SI      NO",
+        "n": 3,
+        "d": "El operador coloca de nuevo el equipo logisitico al termino de su entrega.",
+        "t": "OM",
+        "o": 2
+      },
+      {
+        "cve": 1,
+        "ver": 1,
+        "ca": "SI      NO",
+        "n": 4,
+        "d": "Documentación completa que ampara la entrega.",
+        "t": "OM",
+        "o": 2
+      },
+      {
+        "cve": 1,
+        "ver": 1,
+        "ca": "SI      NO",
+        "n": 5,
+        "d": "La unidad cuenta con ayudante.",
+        "t": "OM",
+        "o": 2
+      },
+      {
+        "cve": 1,
+        "ver": 1,
+        "ca": "Excelente  Bueno  Regular Deficiente",
+        "n": 6,
+        "d": "Condiciones en que recibe las autopartes.",
+        "t": "OM",
+        "o": 4
+      },
+      {
+        "cve": 1,
+        "ver": 1,
+        "ca": "Excelente  Bueno  Regular Deficiente",
+        "n": 7,
+        "d": "La actitud del personal a su servcio fue.",
+        "t": "OM",
+        "o": 4
+      },
+      {
+        "cve": 1,
+        "ver": 1,
+        "ca": "Excelente  Bueno  Regular Deficiente",
+        "n": 8,
+        "d": "Presentación e higiene del personal al servicio.",
+        "t": "OM",
+        "o": 4
+      }
+    ],
+    "newDataSet6": [
+      {
+        "cve": 1,
+        "opc": 2,
+        "dsc": "SI",
+        "sec": 1,
+        "nimg": "si.png"
+      },
+      {
+        "cve": 2,
+        "opc": 2,
+        "dsc": "NO",
+        "sec": 2,
+        "nimg": "no.png"
+      },
+      {
+        "cve": 3,
+        "opc": 4,
+        "dsc": "Excelente",
+        "sec": 1,
+        "nimg": "excelente.png"
+      },
+      {
+        "cve": 4,
+        "opc": 4,
+        "dsc": "Bueno",
+        "sec": 2,
+        "nimg": "bueno.png"
+      },
+      {
+        "cve": 5,
+        "opc": 4,
+        "dsc": "Regular",
+        "sec": 3,
+        "nimg": "regular.png"
+      },
+      {
+        "cve": 6,
+        "opc": 4,
+        "dsc": "Deficiente",
+        "sec": 4,
+        "nimg": "deficiente.png"
+      }
+    ]
+  },
+  "total": 7
+}

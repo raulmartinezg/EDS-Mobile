@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:pullToRefresh="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms"
+             mc:Ignorable="d"
+             Title="Viajes"
+             x:Class="Movil.Views.TravelsView">
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding BackCommand}" />
+    </Shell.BackButtonBehavior>
+    <ContentPage.Content>
+        <Grid RowSpacing="0" ColumnSpacing="0" Padding="0" Margin="0">
+            <pullToRefresh:SfPullToRefresh x:Name="pullToRefresh"
+                                           RefreshContentHeight="50"
+                                           PullingThreshold="150"
+                                           RefreshContentWidth="50"
+                                           ProgressBackgroundColor="#428BCA" 
+                                           TransitionMode="SlideOnTop"
+                                           RefreshCommand="{Binding RefreshCommand}"
+                                           IsRefreshing="{Binding IsRefreshing}">
+                <pullToRefresh:SfPullToRefresh.ProgressStrokeWidth>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <OnPlatform.Android>6</OnPlatform.Android>
+                    </OnPlatform>
+                </pullToRefresh:SfPullToRefresh.ProgressStrokeWidth>
+                <pullToRefresh:SfPullToRefresh.PullableContent>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <SearchBar x:Name="filterText" HeightRequest="40"
+                                   BackgroundColor="LightGray"
+                           Placeholder="Buscar..."
+                           TextChanged="filterText_TextChanged" Grid.Row="0"/>
+                        <syncfusion:SfListView x:Name="listView" Grid.Row="1" ItemsSource="{Binding ViajesSource.Result}" AutoFitMode="Height">
+                            <syncfusion:SfListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Grid RowSpacing="0" ColumnSpacing="0" Margin="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                            <RowDefinition Height="1" />
+                                        </Grid.RowDefinitions>
+                                        <Grid RowSpacing="0" Padding="10">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Label Grid.Row="0" Text="{Binding fvi}" FontAttributes="Bold" FontSize="20" TextColor="#474747" />
+                                            <Grid Grid.Row="1" Padding="0,15,0,0">
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*" />
+                                                    <RowDefinition Height="*" />
+                                                </Grid.RowDefinitions>
+                                                <StackLayout Orientation="Horizontal" Grid.Row="0">
+                                                    <Grid>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="Auto" />
+                                                            <ColumnDefinition Width="Auto" />
+                                                        </Grid.ColumnDefinitions>
+                                                        <Image Grid.Column="0" HeightRequest="15" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="15" Source="roadSolid.png" />
+                                                        <Label Grid.Column="1" Text="{Binding rut}" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="16"/>
+                                                    </Grid>
+                                                </StackLayout>
+                                                <StackLayout Orientation="Horizontal" Grid.Row="1">
+                                                    <Grid>
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="Auto" />
+                                                            <ColumnDefinition Width="Auto" />
+                                                        </Grid.ColumnDefinitions>
+                                                        <Image Grid.Column="0" HeightRequest="15" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="15" Source="calendarCheck.png" />
+                                                        <Label Grid.Column="1" Text="{Binding fsp}" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="16"/>
+                                                    </Grid>
+                                                </StackLayout>
+                                            </Grid>
+                                        </Grid>
+                                        <BoxView Grid.Row="1" HeightRequest="1" Opacity="0.75" BackgroundColor="#DFDEE3" />
+                                    </Grid>
+                                </DataTemplate>
+                            </syncfusion:SfListView.ItemTemplate>
+                        </syncfusion:SfListView>
+                    </Grid>
+                </pullToRefresh:SfPullToRefresh.PullableContent>
+            </pullToRefresh:SfPullToRefresh>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

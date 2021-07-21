@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Encuesta"
+             x:Class="Movil.Views.EncuestaView">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="fondoencuesta1.jpg" Aspect="AspectFill"/>
+            <BoxView Color="#638FBC" Opacity="0.8"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="80"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="1" Padding="30,20">
+                    <Label  x:Name="zlblDescripcionPrengunta" Text="{Binding DescPregunta}" TextColor="DarkBlue" FontAttributes="Bold" FontSize="23" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />               
+                </StackLayout>
+                <StackLayout Grid.Row="2" x:Name="zctrSLCuerpo">
+                    <Grid x:Name="zgrdbotones">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="20"></ColumnDefinition>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <!--<RowDefinition Height="Auto"/>-->
+                            <!--<RowDefinition Height="Auto"/>-->
+                        </Grid.RowDefinitions>
+                    </Grid>
+                </StackLayout>
+                <StackLayout Grid.Row="3" x:Name="zctrButons" Margin="0,30,0,0">
+                    <Button x:Name="zbtnSiguiente" Text="Siguiente>" Margin="170,0,30,0" CornerRadius="20" FontSize="16" Clicked="zbtnSiguiente_Clicked" FontAttributes="Bold" BackgroundColor="#FDB812"  TextColor="DarkBlue"></Button>
+                </StackLayout>
+            </Grid>
+        </Grid>     
+    </ContentPage.Content>
+</ContentPage>

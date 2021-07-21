@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Detalle del Servicio"
+             x:Class="Movil.Views.DetalleServicioView">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid x:Name="GridDatosOperador">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0"
+                   Margin="35,10,12,0"
+                   Text="{Binding zvarConcesionario.NumeroConcesionario}"  
+                   FontAttributes="Bold" 
+                   FontSize="18" HorizontalTextAlignment="Center"
+                   VerticalOptions="Start"/>
+                <Label Grid.Row="1"
+                   Margin="35,0,12,0"
+                   Text="{Binding zvarConcesionario.NombreConcesionario}"  
+                   FontAttributes="Bold" 
+                   FontSize="16"  HorizontalTextAlignment="Start"
+                   VerticalOptions="Start"/>
+                <Frame Grid.Row="2" 
+                   CornerRadius="15" 
+                   Margin="35,10,30,10"
+                   Padding="35,10,30,0"
+                   BackgroundColor="#313172" HasShadow="False" BorderColor="Black">
+                    <Grid x:Name="GridLocacionOperador">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Label 
+                        Grid.Row="0"
+                        Text="Localización:" 
+                        HorizontalTextAlignment="Start"  
+                        TextColor="White" 
+                        VerticalOptions="Center"
+                        FontSize="16"/>
+                        <Label 
+                        Grid.Row="1"
+                        Text="{Binding zvarConcesionario.Direccion}" 
+                        HorizontalTextAlignment="Start"  
+                        TextColor="White" 
+                        VerticalOptions="Start"
+                        FontSize="16"/>
+                        <Image
+                        Grid.Row="2"
+                        Source="MarkerBallAzul.ico" HeightRequest="20" HorizontalOptions="Center" ></Image>
+                    </Grid>
+                </Frame>
+                <Label Grid.Row="3" 
+                   Margin="35,0,0,0"
+                   Text="Resumen de Servicio:" 
+                   HorizontalTextAlignment="Start"  
+                   TextColor="Black" 
+                   VerticalOptions="Start"
+                   FontSize="16"/>
+                <Frame Grid.Row="4" 
+                   Margin="30,10,30,10"
+                   Padding="2,2,2,5"
+                   BackgroundColor="White"  HasShadow="False" BorderColor="Black">
+                    <Grid x:Name="GridEstatusOperador">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <BoxView Color="#E6E6EF" Grid.Row="0" Grid.ColumnSpan="4"/>
+                        <Label 
+                        Grid.Row="0" Grid.Column="0"
+                        Text="Entrada" 
+                        HorizontalTextAlignment="Center"  
+                        TextColor="Black"
+                        FontSize="15"/>
+                        <Label 
+                        Grid.Row="0" Grid.Column="1"
+                        Text="Entregas" 
+                        HorizontalTextAlignment="Center"  
+                        TextColor="Black"
+                        FontSize="15"/>
+                        <Label 
+                        Grid.Row="0" Grid.Column="2"
+                        Text="Incidentes" 
+                        HorizontalTextAlignment="Center"  
+                        TextColor="Black"
+                        FontSize="15"/>
+                        <Label 
+                        Grid.Row="0" Grid.Column="3"
+                        Text="Encuesta" 
+                        HorizontalTextAlignment="Center"  
+                        TextColor="Black"
+                        FontSize="15"/>
+                        <Label 
+                        Grid.Row="1" Grid.Column="0"
+                        Text="{Binding EntradaNumero}" 
+                        HorizontalTextAlignment="Center"  
+                        TextColor="Black" 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="16"/>
+                        <Label 
+                        Grid.Row="1" Grid.Column="1"
+                        Text="{Binding EntregasNumero}" 
+                        HorizontalTextAlignment="Center"  
+                        TextColor="Black" 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="16"/>
+                        <Label 
+                        Grid.Row="1" Grid.Column="2"
+                        Text="{Binding IncidentesNumero}" 
+                        HorizontalTextAlignment="Center"  
+                        TextColor="Black" 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="16"/>
+                        <Label 
+                        Grid.Row="1" Grid.Column="3"
+                        Text="{Binding EncuestaNumero}" 
+                        HorizontalTextAlignment="Center"  
+                        TextColor="Black" 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="16"/>
+                        <Image 
+                        Grid.Row="2" Grid.Column="0"
+                        Source="{Binding EntradaImagen}" HeightRequest="20" HorizontalOptions="Center"></Image>
+                        <Image 
+                        Grid.Row="2" Grid.Column="1"
+                        Source="{Binding EntregasImagen}" HeightRequest="20" HorizontalOptions="Center"></Image>
+                        <Image 
+                        Grid.Row="2" Grid.Column="2"
+                        Source="{Binding IncidentesImagen}" HeightRequest="20" HorizontalOptions="Center"></Image>
+                        <Image 
+                        Grid.Row="2" Grid.Column="3"
+                        Source="{Binding EncuestaImagen}" HeightRequest="20" HorizontalOptions="Center"></Image>
+                    </Grid>
+                </Frame>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

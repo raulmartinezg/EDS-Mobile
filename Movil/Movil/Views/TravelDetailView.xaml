@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Movil.ViewModels" xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
+             mc:Ignorable="d"
+             Title="Detalle del viaje"
+             x:Class="Movil.Views.TravelDetailView">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid RowSpacing="0" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Label Text="{Binding FolioViaje}" Grid.Row="0" FontAttributes="Bold" FontSize="20" TextColor="#474747" />
+                <Grid Grid.Row="1" Padding="0,15,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="0">
+                            <Label Text="Unidad:" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                        <Grid VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="1">
+                            <Label Text="{Binding Unidad}" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                    <Grid VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="0">
+                        <Label Text="Ruta:" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    <Grid VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="1">
+                            <Label Text="{Binding Ruta}" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                    <Grid VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="0">
+                            <Label Text="Paradas:" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    <Grid VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="1">
+                            <Label Text="{Binding Paradas}" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="3">
+                    <Grid VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="0">
+                        <Label Text="Pendientes:" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    <Grid VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="1">
+                            <Label Text="{Binding Pendientes}" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="4">
+                    <Grid VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="0">
+                            <Label Text="Concluidos:" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    <Grid VerticalOptions="Start" HorizontalOptions="Start" Grid.Column="1">
+                            <Label Text="{Binding Concluidos}" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+                <progressBar:SfLinearProgressBar Margin="0,30,0,0" SegmentCount="4" Grid.Row="2" Progress="{Binding Progress}"/>
+                <Grid x:Name="GridProximo" Grid.Row="3" Padding="0,20,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid VerticalOptions="Start" HorizontalOptions="Start">
+                            <Label Text="Próxima parada:" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid VerticalOptions="Start" HorizontalOptions="Start">
+                            <Label Text="{Binding Proximo}" VerticalOptions="Center" HorizontalOptions="Center" Opacity=" 0.54" TextColor="#000000" FontSize="18"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

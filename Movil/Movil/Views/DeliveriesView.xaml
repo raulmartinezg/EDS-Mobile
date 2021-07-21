@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms" xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:numeric="clr-namespace:Syncfusion.SfNumericUpDown.XForms;assembly=Syncfusion.SfNumericUpDown.XForms"
+             Title="Entregas"
+             x:Class="Movil.Views.DeliveriesView">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" Margin="10" FontSize="20" FontAttributes="Bold">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="{Binding zvarConcesionario.NumeroConcesionario}"></Span>
+                            <Span Text=" "></Span>
+                            <Span Text="{Binding zvarConcesionario.NombreConcesionario}"></Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <cards:SfCardView Grid.Row="1" BorderColor="Black" BorderWidth="0.5" HeightRequest="120" CornerRadius="0" Margin="10">
+                    <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+
+                        <cards:SfCardView Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" BorderWidth="0" CornerRadius="0">
+                            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="{Binding Piezas}"></Label>
+                        </cards:SfCardView>
+                        
+                        <cards:SfCardView Grid.Row="0" Grid.Column="1" BackgroundColor="Transparent" BorderWidth="0" CornerRadius="0">
+                            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="{Binding Contenedores}"></Label>
+                        </cards:SfCardView>
+
+                        <cards:SfCardView Grid.Row="1" Grid.Column="0" BackgroundColor="Transparent" BorderWidth="0" CornerRadius="0">
+                            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="{Binding Cajas}"></Label>
+                        </cards:SfCardView>
+                        
+                        <cards:SfCardView Grid.Row="1" Grid.Column="1" BackgroundColor="Transparent" BorderWidth="0" CornerRadius="0">
+                            <Label HorizontalTextAlignment="Center" FontAttributes="Bold" FontSize="16" VerticalTextAlignment="Center" Text="{Binding Total}"></Label>
+                        </cards:SfCardView>
+                    </Grid>
+                </cards:SfCardView>
+
+                <cards:SfCardView Grid.Row="2" x:Name="GridSKU" BorderColor="Black" BackgroundColor="GreenYellow" BorderWidth="0.5" HeightRequest="50" CornerRadius="10,10,10,10" Margin="30,10,30,10">
+                    <Label FontSize="Large" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="{Binding SKU}"></Label>
+                </cards:SfCardView>
+
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="3" Text="{Binding Descripcion}"></Label>
+                
+                <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Row="4" Text="{Binding Disponibles}"></Label>
+
+                <numeric:SfNumericUpDown Grid.Row="5" x:Name="numericUpDown" IsVisible="{Binding CantidadVisible}" Value="{Binding Cantidad}" ValueChangeMode="OnKeyFocus" Margin="50,0,50,20" MaximumDecimalDigits="0" Minimum="1" Maximum="{Binding Maximum}"/>
+
+                <Button Grid.Row="6" Text="{Binding Egresar}" FontSize="14" CornerRadius="10"
+                        BackgroundColor="#163996" TextColor="White" IsVisible="{Binding EgresarVisible}"
+                        VerticalOptions="Center" HorizontalOptions="Center" Command="{Binding EgresarCommand}" />
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

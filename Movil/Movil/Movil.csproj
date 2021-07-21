@@ -1,0 +1,177 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Helpers\Controls\**" />
+    <EmbeddedResource Remove="Helpers\Controls\**" />
+    <None Remove="Helpers\Controls\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="searchs\SearchSKU.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="dummies\LoginService.json" />
+    <None Remove="dummies\ObtieneDetalleViajes.json" />
+    <None Remove="dummies\ObtieneViajes.json" />
+    <None Remove="Media\Egresado.wav" />
+    <None Remove="Media\Error.wav" />
+    <None Remove="Media\Escaneado.wav" />
+    <None Remove="Media\Final.wav" />
+    <None Remove="Media\Maximo.wav" />
+    <None Remove="Media\Multiplica.wav" />
+    <None Remove="Media\Multiplicador.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="dummies\LoginService.json" />
+    <EmbeddedResource Include="dummies\ObtieneDetalleViajes.json" />
+    <EmbeddedResource Include="dummies\ObtieneViajes.json" />
+    <EmbeddedResource Include="Media\Egresado.wav" />
+    <EmbeddedResource Include="Media\Error.wav" />
+    <EmbeddedResource Include="Media\Final.wav" />
+    <EmbeddedResource Include="Media\Maximo.wav" />
+    <EmbeddedResource Include="Media\Multiplicador.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.483" />
+    <PackageReference Include="Honeywell.BarcodeReader" Version="1.32.7.10" />
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
+    <PackageReference Include="Splat" Version="10.0.1" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
+    <PackageReference Include="Syncfusion.Blazor" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Licensing" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.Cards" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.Core" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.DataSource" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.Expander" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.GridCommon" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfAutoComplete" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfBusyIndicator" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfCalendar" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataForm" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfGauge" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfMaps" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfNavigationDrawer" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericTextBox" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPicker" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPopupLayout" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfProgressBar" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfRating" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfSignaturePad" Version="18.4.0.49" />
+    <PackageReference Include="Syncfusion.Xamarin.SfTabView" Version="18.4.0.49" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.113.7" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+    <PackageReference Include="Xam.Plugin.SimpleAudioPlayer" Version="1.4.0" />
+    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1821" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.0" />
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="4.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\Movil.Android\obj\Release\90\android\assets\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android">
+      <HintPath>DLLS\Mono.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\DetalleServicioView.xaml.cs">
+      <DependentUpon>DetalleServicioView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\EncuestaView.xaml.cs">
+      <DependentUpon>EncuestaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\TravelsView.xaml.cs">
+      <DependentUpon>TravelsView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\AppShell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ConclusionView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DeliveriesView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\DetalleServicioView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Bienvenida.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\IncidentesView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\LlegadaView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\MissingServiceView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ParadasView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RecoleccionesView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\SalidasView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ServiceDeliveredView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ServiceIncidentView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Sidmovil\FlyoutHeader.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\EncuestaView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Inicio.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Itinerario.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Login.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TravelDetailView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\TravelsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
